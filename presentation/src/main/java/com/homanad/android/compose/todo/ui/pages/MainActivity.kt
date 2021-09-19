@@ -1,4 +1,4 @@
-package com.homanad.android.compose.todo
+package com.homanad.android.compose.todo.ui.pages
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
