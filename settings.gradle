@@ -6,4 +6,6 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "compose-todo"
-include ':app'
+include ':presentation'
+include ':domain'
+include ':data'
