@@ -20,6 +20,14 @@ object Libs {
         }
     }
 
+    object Coroutines {
+        private const val version = "1.5.1"
+
+        val core by lazy { "org.jetbrains.kotlinx:kotlinx-coroutines-core:$version" }
+        val android by lazy { "org.jetbrains.kotlinx:kotlinx-coroutines-android:$version" }
+        val test by lazy { "org.jetbrains.kotlinx:kotlinx-coroutines-test:$version" }
+    }
+
     object AndroidX {
         const val coreKtx = "androidx.core:core-ktx:1.6.0"
 
@@ -64,6 +72,9 @@ object Libs {
         object Test {
             private const val version = "1.4.0"
 
+            val core by lazy { "androidx.test:core:$version" }
+            val archCore by lazy { "androidx.arch.core:core-testing:2.1.0" }
+
             object Ext {
                 private const val version = "1.1.3"
 
@@ -73,6 +84,12 @@ object Libs {
 
             val espressoCore by lazy { "androidx.test.espresso:espresso-core:3.4.0" }
         }
+    }
+
+    object Test {
+        private const val nhaarn_mockito_version = "2.2.0"
+
+        val nhaarnMockito by lazy { "com.nhaarman.mockitokotlin2:mockito-kotlin:$nhaarn_mockito_version" }
     }
 
     object JUnit {

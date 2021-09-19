@@ -42,12 +42,18 @@ dependencies {
     implementation(project(":domain"))
 
     implementation(Libs.AndroidX.coreKtx)
-    implementation(Libs.AndroidX.Room.roomRuntime)
+    api(Libs.AndroidX.Room.roomRuntime)
     implementation(Libs.AndroidX.Room.roomKtx)
     kapt(Libs.AndroidX.Room.roomCompiler)
 //    ksp(Libs.AndroidX.Room.roomCompiler)
 
     testImplementation(Libs.JUnit.junit)
+    testImplementation(Libs.AndroidX.Test.core)
+    testImplementation(Libs.AndroidX.Test.archCore)
+
+    testImplementation(Libs.Coroutines.test)
+
+    testImplementation(Libs.Test.nhaarnMockito)
 
     androidTestImplementation(Libs.AndroidX.Test.Ext.junit)
     androidTestImplementation(Libs.AndroidX.Test.Ext.junitKtx)
