@@ -1,4 +1,4 @@
-package com.homanad.android.kotlindsl.ui.theme
+package com.homanad.android.compose.todo.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

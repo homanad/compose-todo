@@ -1,4 +1,4 @@
-package com.homanad.android.kotlindsl
+package com.homanad.android.compose.todo
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -8,13 +8,13 @@ import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import com.homanad.android.kotlindsl.ui.theme.KotlindslTheme
+import com.homanad.android.compose.todo.ui.theme.TodoTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            KotlindslTheme {
+            TodoTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(color = MaterialTheme.colors.background) {
                     Greeting("Android")
@@ -32,7 +32,7 @@ fun Greeting(name: String) {
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
-    KotlindslTheme {
+    TodoTheme {
         Greeting("Android")
     }
 }
