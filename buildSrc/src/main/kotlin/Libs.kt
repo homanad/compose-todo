@@ -44,6 +44,23 @@ object Libs {
             val lifeCycleRuntime by lazy { "androidx.lifecycle:lifecycle-runtime-ktx:2.3.1" }
         }
 
+        object Room {
+            private val version = "2.3.0"
+
+            val roomRuntime by lazy { "androidx.room:room-runtime:$version" }
+
+            // To use Kotlin annotation processing tool (kapt)
+            // To use Kotlin Symbolic Processing (KSP)
+            val roomCompiler by lazy { "androidx.room:room-compiler:$version" }
+
+            // optional - Kotlin Extensions and Coroutines support for Room
+            val roomKtx by lazy { "androidx.room:room-ktx:$version" }
+
+            object Test {
+                val roomTest by lazy { "androidx.room:room-testing:$version" }
+            }
+        }
+
         object Test {
             private const val version = "1.4.0"
 

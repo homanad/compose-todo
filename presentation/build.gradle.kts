@@ -1,13 +1,14 @@
 plugins {
     id("com.android.application")
     id("kotlin-android")
+    id("kotlin-kapt")
 }
 
 android {
     compileSdk = Config.compileSdk
 
     defaultConfig {
-        applicationId = "com.homanad.android.kotlindsl"
+        applicationId = "com.homanad.android.compose.todo"
         minSdk = Config.minSdk
         targetSdk = Config.targetSdk
         versionCode = Config.versionCode
@@ -49,6 +50,9 @@ android {
 }
 
 dependencies {
+    implementation(project(":data"))
+    implementation(project(":domain"))
+
     implementation(Libs.AndroidX.coreKtx)
     implementation(Libs.Google.Material.components)
     implementation(Libs.AndroidX.Compose.ui)
